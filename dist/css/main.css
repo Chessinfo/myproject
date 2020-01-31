@@ -1,4 +1,32 @@
-html * {
-  outline: 1px solid red; }
+span {
+  color: #fb9c06; }
+
+.heading {
+  text-align: center;
+  color: #ff9c00;
+  font-size: 40px;
+  text-decoration: underline; }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.team-name {
+  text-align: center;
+  font-size: 22px;
+  color: #6e6d6b; }
+
+.block {
+  max-width: 30%; }
+
+.team-description {
+  text-align: left;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 80px; }
+
+.team-img {
+  text-align: center; }
 
 /*# sourceMappingURL=maps/main.css.map */
