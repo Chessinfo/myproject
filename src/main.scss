@@ -1,32 +1,25 @@
+html * {
+  outline: 1px dotted rgb(0, 153, 255);
+}
+.img-container {
+  width: 300px;
+  height: 300px;
+}
+.img-background {
+  background-image: url('../img/cat.jpg');
+  width: 200px;
+  height: 200px;
+}
 
-span {
-  color: #fb9c06;
+.bg-Layer_8 {
+    width: 316px; height: 317px;
+    background: url('../img/css_sprites.png') -940px -610px;
 }
-.heading {
-  text-align: center;
-  color: #ff9c00;
-  font-size: 40px;
-  text-decoration: underline;
+.bg-phone {
+  width: 910px; height: 984px;
+  background: url('../img/css_sprites.png') -10px -10px;
 }
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.team-name {
-  text-align: center;
-  font-size: 22px;
-  color: #6e6d6b;
-}
-.block {
-  max-width: 30%;
-}
-.team-description {
-  text-align: left;
-  font-size: 15px;
-  line-height: 23px;
-  margin: 0 80px;;
-}
-.team-img {
-  text-align: center;
+.bg-joker {
+  width: 920px; height: 580px;
+  background: url('../img/css_sprites.png') -940px -10px;
 }
