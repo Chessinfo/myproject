@@ -4,55 +4,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js"></script>
-    <title>Orange rabbit</title>
+    <title>Hello world</title>
   </head>
   <body>
+    <div class="big-div">
+      <a href="#anchor">go to footer</a>
+      @@include("./partials/relative/_relative.html")
+      @@include("./partials/absolute/_absolute.html")
+    </div>
+    <div id="anchor">Footer</div>
+    
+    @@include("./partials/fixed/_fixed.html", {"test1":"testscss"})
+  
 
-    <div class="container">
-
-      <div class="heading">
-        <p>Meet  the team</p>
-      </div>
-
-      <div  class="content">
-          
-        <div class="block">
-          <div class="team-name">
-              <p>Hoof <span>- Lead Designer</span></p>
-          </div>
-          <div class="team-img">
-            <img src="./img/Layer-7.png" alt="hoof">
-          </div>
-          <div class="team-description">
-            <p>Hoof is our most talanted designer.  However he`s not the talkative type and I would advise not getting on the wrong side of him.</p>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="team-name">
-            <p>Nibs<span> - CEO/Director</span></p>
-            </div>
-          <div class="team-img">
-            <img src="./img/Layer-8.png" alt="hoof">
-          </div>
-          <div class="team-description">
-            <p>Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too.</p>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="team-name">
-            <p>Squawk<span> - Developer</span></p>
-          </div>
-          <div class="team-img">
-            <img src="./img/Layer-9.png" alt="hoof">
-          </div>
-          <div class="team-description">
-            <p>Squawk is no social bunny. But when it comes to programming he stands out from the crowd.</p>
-          </div>
-        </div>
-      
-      </div> 
-    </div> 
   </body>
 </html>

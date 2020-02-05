@@ -1,32 +1,60 @@
-span {
-  color: #fb9c06; }
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: 100px;
+  width: 100%; }
 
-.heading {
-  text-align: center;
-  color: #ff9c00;
-  font-size: 40px;
-  text-decoration: underline; }
+.second,
+.third,
+.four {
+  display: inline-block;
+  height: 100px;
+  width: 200px; }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+.second {
+  position: relative;
+  left: 60px;
+  top: 20px;
+  background-color: red; }
 
-.team-name {
-  text-align: center;
-  font-size: 22px;
-  color: #6e6d6b; }
+.third {
+  position: relative;
+  top: 30px;
+  z-index: 2;
+  left: 30px;
+  background-color: green; }
 
-.block {
-  max-width: 30%; }
+.four {
+  top: 40px;
+  position: relative;
+  background-color: grey;
+  z-index: 3; }
 
-.team-description {
-  text-align: left;
-  font-size: 15px;
-  line-height: 23px;
-  margin: 0 80px; }
+.container {
+  top: 60px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: red;
+  border: 2px solid black; }
 
-.team-img {
-  text-align: center; }
+.unread {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: green;
+  border: 2px solid blue;
+  padding: 20px; }
+
+html * {
+  outline: 2px solid red; }
+
+.big-div {
+  height: 200vh;
+  margin-top: 105px;
+  background-color: lightgray; }
 
 /*# sourceMappingURL=maps/main.css.map */
