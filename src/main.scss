@@ -1,13 +1,1 @@
-@import "./partials/fixed/fixed.scss";
-@import "./partials/relative/relative.scss";
-@import "./partials/absolute/absolute.scss";
-
-html * {
-outline: 2px solid red;
-} 
-
-.big-div {
-    height: 200vh;
-    margin-top: 105px;
-    background-color: lightgray;
-}
+@import "./partials/card/card.scss";
