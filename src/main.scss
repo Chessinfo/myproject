@@ -43,33 +43,32 @@ hr {
 
 // menu
 
-nav ul {
-  position: relative;
+.topmenu {
   list-style: none;
   display: flex;
-}
-
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  background-color: #fff;
-}
-
-nav ul li:hover > ul {
-  display: block;
-}
-
-.menu ul li {
+  position: relative;
   text-align: center;
+}
+
+li {
   padding: 0 10px;
 }
 
-.menu > ul li a {
+.submenu {
+  position: absolute;
+  display: none;
+  list-style: none;
+  background-color: #fff;
+}
+
+.topmenu li:hover .submenu {
   display: block;
+}
+
+.menu_link {
+  text-decoration: none;
   font-size: 22px;
   color: #9e9b9b;
-  text-decoration: none;
 }
 
 .menu_link:hover {
