@@ -70,11 +70,6 @@ hr {
   display: none;
   background-color: #fff; }
 
-.submenu_2 {
-  position: absolute;
-  display: none;
-  background-color: #fff; }
-
 .menu li > ul li a {
   padding: 10px; }
 
