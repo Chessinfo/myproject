@@ -34,12 +34,19 @@ hr {
 .rabbit {
   color: #6e6d6b; }
 
-.menu ul {
-  list-style: none; }
+nav ul {
+  position: relative;
+  list-style: none;
+  display: flex; }
 
-.menu > ul {
-  display: flex;
-  justify-content: center; }
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fff; }
+
+nav ul li:hover > ul {
+  display: block; }
 
 .menu ul li {
   text-align: center;
@@ -61,27 +68,6 @@ hr {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px; }
-
-.menu li:hover ul {
-  display: block; }
-
-.menu .submenu {
-  position: absolute;
-  display: none;
-  background-color: #fff; }
-
-.submenu_2 {
-  position: absolute;
-  display: none;
-  background-color: #fff; }
-
-.menu li > ul li a {
-  padding: 10px; }
-
-menu li > ul li ul {
-  position: absolute;
-  right: 150px;
-  top: 0; }
 
 .slider {
   display: flex;
