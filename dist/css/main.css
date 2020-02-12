@@ -1,2 +1,22 @@
+.class1 {
+  width: 200px;
+  height: 200px;
+  background-color: red; }
+
+.class2 {
+  width: 100px;
+  height: 100px;
+  background-color: green; }
+
+.class3 {
+  width: 50px;
+  height: 50px;
+  background-color: yellow; }
+
+.bcg {
+  height: 20px; }
+
+.class3 + .class3 {
+  background-color: blue; }
 
 /*# sourceMappingURL=maps/main.css.map */
