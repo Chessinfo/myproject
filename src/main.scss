@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "zai_Bazgroly";
+    src: url(../fonts/zai_Bazgroly.ttf);
+}
+
+html * {
+    font-family: "zai_Bazgroly";
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    font-weight: small;
+}
+
+.overflow {
+    position: relative;
+    overflow: hidden;
+    border: solid 1px red;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.overflow:hover::before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    text-outline: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0 , 0, 0, .5);
+    z-index: 1;
+    border-radius: 100% 75%;
+}
+
+.bcg2 {
+    height: 40px;
+    background-color: yellow;
+}
