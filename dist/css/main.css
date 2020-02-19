@@ -1,2 +1,69 @@
+html * {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: flex;
+  width: 940px;
+  height: 1400px;
+  margin: auto; }
+
+.content {
+  width: 65%; }
+
+.header {
+  background-color: #d7d8d9; }
+
+.nav {
+  display: flex; }
+
+li {
+  list-style: none; }
+
+.nav__link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333333;
+  padding: 0 10px;
+  line-height: 19px; }
+
+.nav__link:hover {
+  color: #ffffff;
+  background-color: #333333; }
+
+.caorusel {
+  display: flex;
+  margin: 20px 0;
+  border-bottom: 5px solid #c70000; }
+
+.caorusel__img {
+  font-size: 0; }
+
+.caorusel__news__title {
+  font-size: 30px;
+  color: red;
+  text-align: left;
+  margin-left: 20px;
+  padding-bottom: 20px; }
+
+.caorusel__news__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  text-align: left;
+  margin-left: 20px; }
+
+.main__news {
+  display: flex;
+  justify-content: space-between; }
+
+.main__news__content {
+  text-align: left;
+  font-size: 14px; }
+
+.sidebar {
+  width: 35%;
+  margin-left: 20px;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=maps/main.css.map */
