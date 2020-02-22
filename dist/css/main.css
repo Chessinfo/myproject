@@ -1,11 +1,7 @@
-html * {
-  margin: 0;
-  padding: 0; }
-
 .container {
   display: flex;
   width: 940px;
-  height: 1400px;
+  min-height: 100vh;
   margin: auto; }
 
 .content {
@@ -16,9 +12,6 @@ html * {
 
 .nav {
   display: flex; }
-
-li {
-  list-style: none; }
 
 .nav__link {
   text-decoration: none;
@@ -35,6 +28,9 @@ li {
   display: flex;
   margin: 20px 0;
   border-bottom: 5px solid #c70000; }
+
+.caorusel__news {
+  background-color: #f7f9fa; }
 
 .caorusel__img {
   font-size: 0; }
@@ -53,17 +49,34 @@ li {
   text-align: left;
   margin-left: 20px; }
 
-.main__news {
+.main__news__title {
+  font-size: 24px;
+  color: #333333;
+  border-bottom: 5px solid #333333; }
+
+.main__news__content {
   display: flex;
   justify-content: space-between; }
 
+.main__news__block {
+  width: 25%; }
+
 .main__news__content {
   text-align: left;
-  font-size: 14px; }
+  font-size: 14px;
+  padding-right: 10px; }
 
 .sidebar {
   width: 35%;
   margin-left: 20px;
   border: 1px solid black; }
+
+.footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.footer__content {
+  flex: 1 0 auto; }
 
 /*# sourceMappingURL=maps/main.css.map */
