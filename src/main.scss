@@ -1,99 +1,98 @@
 .container {
-    display: flex;
-    width: 940px;
-    min-height: 100vh;
-    margin: auto;
+  display: flex;
+  width: 940px;
+  margin: auto;
 }
 
 .content {
-    width: 65%;
+  width: 65%;
+}
+
+.container .content {
+  flex: 1 0 auto;
 }
 
 .header {
-    background-color: #d7d8d9;
+  background-color: #d7d8d9;
 }
 
 .nav {
-    display: flex;
+  display: flex;
 }
 
 .nav__link {
-    text-decoration: none;
-    font-size: 18px;
-    color: #333333;
-    padding: 0 10px ;
-    line-height: 19px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333333;
+  padding: 0 10px;
+  line-height: 19px;
 }
 
 .nav__link:hover {
-    color: #ffffff;
-    background-color: #333333;
+  color: #ffffff;
+  background-color: #333333;
 }
 
 .caorusel {
-    display: flex;
-    margin: 20px 0;
-    border-bottom: 5px solid #c70000;
+  display: flex;
+  margin: 20px 0;
+  border-bottom: 5px solid #c70000;
 }
 
 .caorusel__news {
-    background-color: #f7f9fa;
+  position: relative;
+  background-color: #f7f9fa;
+}
+
+.caorusel__news__shape {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
 }
 
 .caorusel__img {
-    font-size: 0;
+  font-size: 0;
 }
 
 .caorusel__news__title {
-    font-size: 30px;
-    color: red;
-    text-align: left;
-    margin-left: 20px;
-    padding-bottom: 20px;
+  font-size: 30px;
+  color: red;
+  text-align: left;
+  margin-left: 20px;
+  padding-bottom: 20px;
 }
 
 .caorusel__news__description {
-    font-size: 14px;
-    line-height: 18px;
-    color: #333333;
-    text-align: left;
-    margin-left: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .main__news__title {
-    font-size: 24px;
-    color: #333333;
-    border-bottom: 5px solid #333333;
+  font-size: 24px;
+  color: #333333;
+  border-bottom: 5px solid #333333;
 }
 
 .main__news__content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main__news__block {
-    width: 25%;
+  width: 25%;
 }
 
 .main__news__content {
-    text-align: left;
-    font-size: 14px;
-    padding-right: 10px;
+  text-align: left;
+  font-size: 14px;
+  padding-right: 10px;
 }
-
 
 .sidebar {
-    width: 35%;
-    margin-left: 20px;
-    border: 1px solid black;
-}
-
-.footer {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__content {
-    flex: 1 0 auto;
+  width: 35%;
+  margin-left: 20px;
+  border: 1px solid black;
 }

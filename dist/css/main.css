@@ -1,11 +1,13 @@
 .container {
   display: flex;
   width: 940px;
-  min-height: 100vh;
   margin: auto; }
 
 .content {
   width: 65%; }
+
+.container .content {
+  flex: 1 0 auto; }
 
 .header {
   background-color: #d7d8d9; }
@@ -30,7 +32,13 @@
   border-bottom: 5px solid #c70000; }
 
 .caorusel__news {
+  position: relative;
   background-color: #f7f9fa; }
+
+.caorusel__news__shape {
+  position: absolute;
+  right: 20px;
+  bottom: 10px; }
 
 .caorusel__img {
   font-size: 0; }
@@ -70,13 +78,5 @@
   width: 35%;
   margin-left: 20px;
   border: 1px solid black; }
-
-.footer {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; }
-
-.footer__content {
-  flex: 1 0 auto; }
 
 /*# sourceMappingURL=maps/main.css.map */
