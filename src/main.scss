@@ -1,0 +1,29 @@
+.container {
+    width: 250px;
+    margin: 100px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 5px;
+}
+
+input {
+    float: right;
+}
+
+button {
+    margin-top: 20px;
+}
+
+input[type="radio"] {
+    // display: none;
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+}
