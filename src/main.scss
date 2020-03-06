@@ -45,12 +45,11 @@ li {
 h1 a {
   font-size: 30px;
   color: white;
-  text-align: left;
 }
 
 .logo_subtext {
   font-size: 9px;
-  letter-spacing: 6px;
+  letter-spacing: 9px;
 }
 
 .nav {
@@ -142,8 +141,7 @@ h1 a {
 .service {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .service_box {
@@ -152,7 +150,7 @@ h1 a {
   align-items: center;
   text-align: center;
   width: 25%;
-  margin: 0 -10px;
+  padding: 0 10px;
 }
 
 .box_img {
@@ -175,7 +173,6 @@ h1 a {
   margin-top: 20px;
   font-size: 16px;
   color: #707070;
-  padding: 0 10px;
 }
 
 .process_heading {
@@ -218,7 +215,7 @@ h1 a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 -10px;
+  padding: 0 10px;
   padding-bottom: 30px;
 }
 
