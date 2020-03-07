@@ -1,2 +1,49 @@
+@font-face {
+  font-family: 'Icons';
+  src: url("../fonts/sap-icofonts.woff"); }
+
+label {
+  display: block; }
+
+.accardeon {
+  margin-top: 30px;
+  outline: 1px solid black;
+  width: 200px; }
+
+.input {
+  display: none; }
+
+.accardeon_item {
+  border: 1px solid black;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative; }
+
+.desc_accardeon {
+  padding: 0 10px;
+  text-align: left; }
+
+.accardeon_item:after {
+  content: '\E000';
+  display: block;
+  font-family: 'Icons';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); }
+
+.input:checked ~ .accardeon_item:after {
+  content: '\E00F'; }
+
+.desc_accardeon {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease;
+  border: 1px solid black;
+  border-top: none; }
+
+.input:checked ~ .desc_accardeon {
+  max-height: 100vh;
+  transform: max-height .5s ease; }
 
 /*# sourceMappingURL=maps/main.css.map */
