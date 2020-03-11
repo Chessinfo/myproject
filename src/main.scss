@@ -1,0 +1,25 @@
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 200px;
+    margin-right: 50%;
+}
+.rating_input {
+    display: none;
+}
+
+.rating_label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.rating_label:hover,
+.rating_label:hover ~ .rating_label,
+.rating_input:checked ~ .rating_label {
+    background: yellow;
+}
