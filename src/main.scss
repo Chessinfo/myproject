@@ -1,29 +1,128 @@
-.container {
-    width: 250px;
-    margin: 100px auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
+@import "./partials/rating/rating.scss";
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/sap-icofonts.woff");
 }
 
 label {
-    padding-bottom: 5px;
-}
-
-input {
-    float: right;
-}
-
-button {
-    margin-top: 20px;
+  display: block;
+  margin: 10px;
 }
 
 input[type="radio"] {
-    // display: none;
+  display: none;
 }
 
-input[type="radio"]:checked+label {
-    color: red;
+.radio-button {
+  position: relative;
+  padding-left: 20px;
+  height: 15px;
+}
+
+.radio-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    background-color: lightgreen;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+    background-color: grey;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    background-color: blue;
+  }
+}
+
+.radio-button:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: blue;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+input[type="radio"]:checked + .radio-button:after {
+  animation: jump 0.5s ease forwards;
+}
+
+input[type="radio"]:checked + .radio-button {
+  color: red;
+}
+
+.accordeon {
+  margin-top: 30px;
+  width: 200px;
+  outline: 1px solid lightgrey;
+}
+
+.input {
+  display: none;
+}
+
+.accordeon__item {
+  border: 1px solid black;
+  display: block;
+  padding: 10px 30px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordeon__item:after {
+  content: "\E00D";
+  display: block;
+  font-family: "icons";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.input1:checked ~ .accordeon__item.input1:after,
+.input2:checked ~ .accordeon__item.input2:after,
+.input3:checked ~ .accordeon__item.input3:after {
+  content: "\E00F";
+}
+
+.accordeon__description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.input1:checked ~ .accordeon__description.input1,
+.input2:checked ~ .accordeon__description.input2,
+.input3:checked ~ .accordeon__description.input3 {
+  max-height: 100vh;
+  transition: max-height 0.5s ease;
+}
+
+.raiting {
+  display: flex;
+  flex-direction: row-reverse;
 }
