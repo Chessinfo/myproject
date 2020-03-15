@@ -14,8 +14,15 @@ li {
   color: #ffe600;
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
 .home_section_bg {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: url(../img/IMAGE.png) fixed;
   background-size: cover;
@@ -25,13 +32,6 @@ li {
   position: fixed;
   background-color: rgba(19, 19, 22, 0.7);
   width: 100%;
-  z-index: 1;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
-  padding: 0 15px;
 }
 
 .header_inner {
@@ -74,12 +74,10 @@ h1 a {
 }
 
 .slider {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 30px;
+  margin: auto 0;
 }
 
 .slider_title {
@@ -90,9 +88,14 @@ h1 a {
 
 .btn {
   display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #131316;
   background-color: #ffe600;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 30px 0 60px;
+  cursor: pointer;
+  border: none;
 }
 
 .btn a {
@@ -103,6 +106,16 @@ h1 a {
 
 .btn:hover {
   outline: 1px solid white;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #ffe600;
+  margin: 0 auto;
 }
 
 #service_section {
@@ -228,8 +241,6 @@ h1 a {
   color: #ffffff;
   padding: 10px;
 }
-
-// works
 
 #works-section {
   padding-top: 60px;
@@ -510,7 +521,7 @@ blockquote {
 }
 
 form {
-  padding-bottom: 60px;
+  text-align: center;
 }
 
 .contact_form {
@@ -526,11 +537,23 @@ form {
   color: #fff;
 }
 
+input:focus {
+  outline: 2px solid #ffe600;
+  background-color: rgba(19, 19, 22, 0.5);
+  box-shadow: #fff;
+}
+
 textarea {
   width: 1170px;
   height: 220px;
+  color: #fff;
   background: none;
   padding: 20px;
+}
+
+textarea:focus {
+  outline: 2px solid #ffe600;
+  background-color: rgba(19, 19, 22, 0.5);
 }
 
 footer {
@@ -555,14 +578,4 @@ footer {
 
 .footer_social .social_icons {
   border: none;
-}
-
-.arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background-color: #ffe600;
-  margin: auto;
 }
