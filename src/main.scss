@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: #131316;
 }
 
 li {
@@ -108,6 +109,11 @@ h1 a {
   outline: 1px solid white;
 }
 
+.arrow_block {
+  display: flex;
+  justify-content: center;
+}
+
 .arrow {
   display: flex;
   align-items: center;
@@ -115,7 +121,6 @@ h1 a {
   width: 60px;
   height: 60px;
   background-color: #ffe600;
-  margin: 0 auto;
 }
 
 #service_section {
@@ -333,16 +338,15 @@ h1 a {
 .about_block {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
   margin-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about_box {
   display: flex;
-  align-items: center;
   width: 50%;
   padding: 10px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 
 .about_img {
@@ -353,6 +357,7 @@ h1 a {
   height: 50px;
   background: #ffe600;
   border-radius: 50%;
+  margin: 10px;
 }
 
 .about_desc {
@@ -364,6 +369,7 @@ h1 a {
   font-size: 20px;
   padding: 10px;
 }
+
 .about_box_text {
   font-size: 16px;
   font-family: sans-serif;
