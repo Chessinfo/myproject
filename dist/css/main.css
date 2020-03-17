@@ -1,185 +1,85 @@
-html * {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-hr {
-  height: 3px;
-  border: 0;
-  background-color: #6e6d6b;
-  opacity: 0.4; }
+body {
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px; }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.header {
-  padding: 10px 0; }
-
-.header_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.header_logo {
-  display: flex;
-  align-items: center;
-  margin-left: 20px; }
-
-.header_logo_text {
-  font-size: 37px;
-  color: #fb9c06;
-  padding-left: 50px; }
-
-.rabbit {
-  color: #6e6d6b; }
-
-.menu ul {
+li {
   list-style: none; }
 
-.menu > ul {
-  display: flex;
-  justify-content: center; }
-
-.menu ul li {
-  text-align: center;
-  padding: 0 10px; }
-
-.menu > ul li a {
-  display: block;
-  font-size: 22px;
-  color: #9e9b9b;
+a {
+  color: #000;
   text-decoration: none; }
 
-.menu_link:hover {
-  text-decoration: underline; }
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
-.menu_icon {
-  width: 50px;
-  height: 50px;
+.header {
+  border-top: 1px solid #3882e5; }
+
+.header__inner {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px; }
+  height: 87px; }
 
-.menu li:hover ul {
-  display: block; }
-
-.menu .submenu {
-  position: absolute;
-  display: none;
-  background-color: #fff; }
-
-.menu li > ul li a {
-  padding: 10px; }
-
-menu li > ul li ul {
-  position: absolute;
-  right: 150px;
-  top: 0; }
-
-.slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px;
-  background: #fb9c06 url(../img/big-orange-bg.png);
-  border-top: 4px solid #fb9c06;
-  border-bottom: 4px solid #fb9c06; }
-
-.slider_title_bg {
-  margin: 0 0 30px 30px;
-  width: 470px;
-  color: #fb9c06;
-  background-color: #6e6d6b; }
-
-.slider_title {
-  padding-left: 20px;
-  font-size: 37px; }
-
-.slider_subtitle_bg {
-  width: 370px;
-  margin-left: 40px;
-  background-color: #fb9c06; }
-
-.slider_subtitle {
-  padding-left: 25px;
-  font-size: 37px;
-  color: #6e6d6b; }
-
-.textarea {
-  display: flex;
-  margin: 35px 0; }
-
-.textarea_item {
-  padding: 0 20px;
-  width: 25%;
-  font-size: 15px; }
-
-.read_more {
-  text-align: right; }
-
-.read_more_btn {
-  text-decoration: none;
-  color: #fb9c06;
-  font-size: 17px;
-  font-style: italic; }
-
-.title {
-  margin: 30px 0 0 0;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 400;
-  color: #ff9c00;
-  text-decoration: underline; }
-
-.meet_the_team {
+.menu__list {
   display: flex; }
 
-.meet_item {
-  width: 33.33%;
-  text-align: center;
-  padding: 20px 20px; }
+.menu__list li {
+  margin-left: 38px; }
 
-.meet_item_title {
-  font-size: 22px;
-  color: #6e6d6b;
-  margin: 50px 0 30px 0;
+.menu__list a {
+  font-size: 14px;
+  color: #2f3f54;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase; }
+
+.top {
+  background-color: #3882e5;
+  padding: 150px 0 180px; }
+
+.top__inner {
+  display: flex; }
+
+.top-info {
+  max-width: 555px;
+  margin-right: 35px;
+  color: #fff; }
+
+.top-info__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase; }
+
+.top-info__descr {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 35px; }
+
+.top-info__descr span {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400; }
 
-.meet_description {
-  color: #ff9c00; }
+.top-info__list {
+  margin-bottom: 50px; }
 
-.meet_item_img {
-  margin-bottom: 15px; }
-
-.meet_item_text {
-  text-align: left;
-  font-size: 15px;
-  padding: 0 55px; }
-
-form {
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0; }
-
-label {
-  color: #ff9c00; }
-
-input {
-  width: 1070px;
-  float: right;
-  margin-bottom: 10px; }
-
-textarea {
-  width: 1070px;
-  float: right; }
-
-.footer {
-  padding-top: 20px;
-  text-align: center;
-  background-color: #ff9c00;
-  height: 50px;
-  font-size: 23px; }
+.top-info__list li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 3px; }
 
 /*# sourceMappingURL=maps/main.css.map */
