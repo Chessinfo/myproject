@@ -1,2 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.calculator {
+  max-width: 300px;
+  border: 2px solid lightblue;
+  padding: 10px;
+  margin: 50px auto 0;
+  background-color: lightgrey; }
+
+.input_screen {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px; }
+
+.buttons_wrapper {
+  display: flex; }
+
+.numbers_btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 75%;
+  margin-right: 10px; }
+
+.button_numbers {
+  width: 25%;
+  margin-bottom: 10px;
+  margin-right: 14px;
+  border: 1px solid black;
+  border-radius: 5px; }
+
+.button_numbers:last-child {
+  width: 100%; }
+
+.sign_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  height: 300px; }
+
+.button_sign {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=maps/main.css.map */
