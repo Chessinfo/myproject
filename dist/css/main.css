@@ -1,56 +1,58 @@
-* {
+.button {
+  position: relative;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-.calculator {
-  max-width: 300px;
-  border: 2px solid lightblue;
-  padding: 10px;
-  margin: 50px auto 0;
-  background-color: lightgrey; }
-
-.input_screen {
-  font-size: 20px;
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
   font-weight: bold;
   width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px; }
+  cursor: pointer;
+  text-shadow: 1px 1px 2px black;
+  outline: none; }
+  .button:active {
+    top: 1px;
+    left: 1px; }
 
-.buttons_wrapper {
-  display: flex; }
+.calculator {
+  width: 600px;
+  border: 1px solid lightgray;
+  border-radius: 5px; }
+  .calculator__field {
+    display: flex; }
+  .calculator__input {
+    width: calc(100% - 14px);
+    font-size: 40px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin: 7px;
+    padding: 5px;
+    text-align: right; }
 
-.numbers_btn {
+.num-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   flex-basis: 75%;
-  margin-right: 10px; }
+  align-items: center; }
+  .num-buttons__button-wrapper {
+    width: 33%;
+    padding: 7px;
+    box-sizing: border-box; }
+    .num-buttons__button-wrapper:last-child {
+      width: 100%;
+      align-self: flex-end; }
 
-.button_numbers {
-  width: 25%;
-  margin-bottom: 10px;
-  margin-right: 14px;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.button_numbers:last-child {
-  width: 100%; }
-
-.sign_btn {
+.actions {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 25%;
-  height: 300px; }
-
-.button_sign {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 50px;
-  margin-bottom: 10px; }
+  flex-basis: 25%; }
+  .actions__item {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box; }
 
 /*# sourceMappingURL=maps/main.css.map */

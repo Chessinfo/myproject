@@ -1,43 +1,95 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/main.css">
-
-  <title>calculator</title>
-</head>
-
-<body>
-  <div class="calculator">
-
-    <input type="text" class="input_screen">
-
-    <div class="buttons_wrapper">
-      <div class="numbers_btn">
-        <button class="button_numbers" data-value="1">1</button>
-        <button class="button_numbers" data-value="2">2</button>
-        <button class="button_numbers" data-value="3">3</button>
-        <button class="button_numbers" data-value="4">4</button>
-        <button class="button_numbers" data-value="5">5</button>
-        <button class="button_numbers" data-value="6">6</button>
-        <button class="button_numbers" data-value="7">7</button>
-        <button class="button_numbers" data-value="8">8</button>
-        <button class="button_numbers" data-value="9">9</button>
-        <button class="button_numbers" data-value="0">0</button>
-      </div>
-      <div class="sign_btn">
-        <button class="button_sign" data-value="+">+</button>
-        <button class="button_sign" data-value="-">-</button>
-        <button class="button_sign" data-value="*">*</button>
-        <button class="button_sign" data-value="/">/</button>
-        <button class="button_sign" data-value="=">=</button>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+    <title>Hello world</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="calculator__input">
+      <div class="calculator__field">
+        <div class="num-buttons">
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="1">
+    1
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="2">
+    2
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="3">
+    3
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="4">
+    4
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="5">
+    5
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="6">
+    6
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="7">
+    7
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="8">
+    8
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="9">
+    9
+  </button>
+          </div>
+          <div class="num-buttons__button-wrapper">
+            <button class="button" data-value="0">
+    0
+  </button>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="actions__item">
+            <button class="button" data-value="+">
+    +
+  </button>
+          </div>
+          <div class="actions__item">
+            <button class="button" data-value="-">
+    -
+  </button>
+          </div>
+          <div class="actions__item">
+            <button class="button" data-value="*">
+    *
+  </button>
+          </div>
+          <div class="actions__item">
+            <button class="button" data-value="/">
+    /
+  </button>
+          </div>
+          <div class="actions__item">
+            <button class="button" data-value="=">
+    =
+  </button>
+          </div>
+       </div>
       </div>
     </div>
-
-  </div>
-
-  <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>

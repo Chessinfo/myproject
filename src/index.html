@@ -1,43 +1,65 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/main.css">
-
-  <title>calculator</title>
-</head>
-
-<body>
-  <div class="calculator">
-
-    <input type="text" class="input_screen">
-
-    <div class="buttons_wrapper">
-      <div class="numbers_btn">
-        <button class="button_numbers" data-value="1">1</button>
-        <button class="button_numbers" data-value="2">2</button>
-        <button class="button_numbers" data-value="3">3</button>
-        <button class="button_numbers" data-value="4">4</button>
-        <button class="button_numbers" data-value="5">5</button>
-        <button class="button_numbers" data-value="6">6</button>
-        <button class="button_numbers" data-value="7">7</button>
-        <button class="button_numbers" data-value="8">8</button>
-        <button class="button_numbers" data-value="9">9</button>
-        <button class="button_numbers" data-value="0">0</button>
-      </div>
-      <div class="sign_btn">
-        <button class="button_sign" data-value="+">+</button>
-        <button class="button_sign" data-value="-">-</button>
-        <button class="button_sign" data-value="*">*</button>
-        <button class="button_sign" data-value="/">/</button>
-        <button class="button_sign" data-value="=">=</button>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+    <title>Hello world</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="calculator__input">
+      <div class="calculator__field">
+        <div class="num-buttons">
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 1})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 2})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 3})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 4})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 5})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 6})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 7})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 8})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 9})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 0})
+          </div>
+        </div>
+        <div class="actions">
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "+"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "-"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "*"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "/"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "="})
+          </div>
+       </div>
       </div>
     </div>
-
-  </div>
-
-  <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>
