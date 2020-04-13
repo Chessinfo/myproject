@@ -29,7 +29,8 @@ section + section {
   flex-direction: column;
   height: 100vh;
   background: url(../img/IMAGE.png) fixed;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .header {
   position: fixed;
@@ -39,7 +40,8 @@ section + section {
 .header_inner {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 5px 0; }
 
 h1 {
   font-size: 30px;
@@ -97,7 +99,7 @@ h1 {
   background-color: rgba(19, 19, 22, 0.7);
   text-align: center;
   width: 100vw;
-  margin-top: 12px;
+  margin-top: 17px;
   max-height: 0;
   overflow: hidden;
   transition: 0.5s all; }
@@ -149,6 +151,12 @@ h1 {
 
 .btn:hover {
   outline: 1px solid #fff; }
+
+.arrow_top {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .arrow_link {
   display: flex;
@@ -244,10 +252,12 @@ h1 {
 
 .works_list ul {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .works_list li {
   text-transform: uppercase;
+  padding: 10px;
   margin: 0 15px; }
 
 .works_list li a {
