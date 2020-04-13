@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -58,11 +59,11 @@ h1 {
 }
 
 .menu li {
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.menu li:first-child {
-  margin: 0;
+.menu li:last-child {
+  margin-right: 0;
 }
 
 .menu_link {
@@ -73,6 +74,69 @@ h1 {
 
 .menu_link:hover {
   color: #ffe600;
+  transition: 0.5s all;
+}
+
+// Мобильное меню
+
+.menu_btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.menu_btn span {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 9px;
+}
+
+.menu_btn::before,
+.menu_btn::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.menu_btn::before {
+  top: 0;
+}
+
+.menu_btn::after {
+  bottom: 0;
+}
+
+.menu_mobile {
+  position: absolute;
+  left: 0;
+  background-color: rgba(19, 19, 22, 0.7);
+  text-align: center;
+  width: 100vw;
+  margin-top: 12px;
+  // font-size: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.menu_mobile .menu_link {
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #ffe600;
+}
+
+.input_btn {
+  display: none;
+}
+
+.input_btn:checked + .menu_mobile {
+  // font-size: 20px;
+  max-height: 500px;
   transition: 0.5s all;
 }
 
@@ -88,6 +152,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 30px;
 }
 
 .slider_title {
@@ -95,7 +160,7 @@ h1 {
   font-weight: bold;
   color: #fff;
   padding: 0 10px;
-  margin: 60px 0 40px;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -103,7 +168,7 @@ h1 {
   background-color: #ffe600;
   padding: 10px;
   cursor: pointer;
-  margin: 0 auto 60px;
+  margin: 0 auto;
 }
 
 .btn a {
@@ -329,6 +394,8 @@ h1 {
 }
 
 .team_box {
+  display: flex;
+  flex-direction: column;
   width: 25%;
   background: #fff;
   cursor: pointer;
@@ -343,7 +410,6 @@ h1 {
 }
 
 .team_box_img {
-  // max-width: 100%;
   height: 270px;
 }
 
@@ -365,6 +431,7 @@ h1 {
   color: #131316;
   padding: 10px;
   text-transform: uppercase;
+  margin-top: auto;
 }
 
 .team_input {
@@ -568,10 +635,23 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
-  nav {
+@media (min-width: 768px) {
+  .menu_mobile li {
     display: none;
   }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .slider_title {
+    font-size: 40px;
+  }
+  .menu_btn {
+    display: block;
+  }
+
   .section_items {
     flex-direction: column;
     align-items: center;
@@ -583,7 +663,9 @@ footer {
     width: 100%;
   }
   .team_box {
+    align-items: center;
     width: 100%;
+    padding-top: 10px;
   }
   .works_desc {
     flex-direction: column;
