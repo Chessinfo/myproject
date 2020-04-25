@@ -26,10 +26,10 @@ img {
   max-width: 100%;
 }
 
-// button:active,
-// button:focus {
-//   outline: none;
-// }
+button:active,
+button:focus {
+  outline: none;
+}
 
 section + section {
   padding-top: 60px;
@@ -609,7 +609,7 @@ button {
   cursor: pointer;
 }
 
-button:focus {
+form button:focus {
   outline: 3px solid $yellow;
   background-color: rgb(41, 58, 211);
 }

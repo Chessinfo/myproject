@@ -16,6 +16,10 @@ img {
   display: block;
   max-width: 100%; }
 
+button:active,
+button:focus {
+  outline: none; }
+
 section + section {
   padding-top: 60px; }
 
@@ -495,7 +499,7 @@ button {
   border: none;
   cursor: pointer; }
 
-button:focus {
+form button:focus {
   outline: 3px solid #ffe600;
   background-color: #293ad3; }
 
