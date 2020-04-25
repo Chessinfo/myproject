@@ -138,6 +138,8 @@ section + section {
   margin-bottom: 60px; }
 
 .section_title {
+  font-size: 16px;
+  font-weight: 400;
   color: #515151;
   text-transform: uppercase; }
 
